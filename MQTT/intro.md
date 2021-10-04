@@ -18,3 +18,5 @@ Zu erst muss erwähnt werden, dass MQTT (ausgeschrieben: Message Queuing Telemet
 Es gibt also ein (oder mehrere) Server der die Anfragen, der IOT Geräte, entgegennimmt, verarbeitet und wieder versendet.
 Dieser Server wird "MQTT-Broker" genannt.
 Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
+
+![MQTT Client-Server](/assets/images/mqtt-publish-subscribe.png)
