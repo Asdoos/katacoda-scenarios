@@ -18,3 +18,6 @@ Anschließend kann Mosquitto über den Paket-Manager installiert werden:
 Dieser Befehl muss ebenfalls mit Y bestätigt werden
 `y`{{execute "T1"}}
 
+Damit ist der Server schon installiert und kann anfragen entgegen nehmen.
+
+Weiter geht es im nächsten Schritt!
