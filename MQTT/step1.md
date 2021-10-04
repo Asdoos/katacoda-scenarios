@@ -7,5 +7,8 @@ Ein anderes wird den Heizungsregler simulieren und deren Reaktion ausgeben.
 
 ACHTUNG: Auch wenn beide Scripts auf dem selben System ausgeführt werden soll die Kommunikation dennoch über den MQTT Broker geschehen!
 
-
+## Installation MQTT Broker
+Der bekannteste und freie Broker nennt sich "Mosquitto". Und wird wie folgt installiert:
+Zuerst wird das Repository eingebunden:
+`sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa`{{execute "T1"}}
 
