@@ -14,6 +14,7 @@ Wie wäre es also wenn sich die Heizungen automatisch abstellen sobald ein Fenst
 Dafür werden ein Sensor an dem Fenster und ein Aktor an der Heizung benötigt. Diese beiden müssen nun miteinander kommunizieren.
 ## MQTT
 Wie funktioniert nun dieses "MQTT" überhaupt?!...
-Zu erst muss erwähnt werden, dass MQTT (ausgeschrieben: Message Queuing Telemetry Transport) auf dem Client-Server Prinzip Funktioniert.
-Es gibt also irgendwo ein Server der Anfragen entgegennimmt, verarbeitet und wieder versendet.
-Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. 
+Zu erst muss erwähnt werden, dass MQTT (ausgeschrieben: Message Queuing Telemetry Transport) auf dem Client-Server Prinzip aufbaut.
+Es gibt also ein (oder mehrere) Server der die Anfragen, der IOT Geräte, entgegennimmt, verarbeitet und wieder versendet.
+Dieser Server wird "MQTT-Broker" genannt.
+Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
