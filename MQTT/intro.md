@@ -19,5 +19,4 @@ Es gibt also ein (oder mehrere) Server der die Anfragen, der IOT Geräte, entgeg
 Dieser Server wird "MQTT-Broker" genannt.
 Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
 
-![MQTT Client-Server](https://github.com/Asdoos/katacoda-scenarios/blob/main/MQTT/assets/images/mqtt-publish-subscribe.png)
-![MQTT Client-Server](https://github.com/Asdoos/katacoda-scenarios/blob/main/MQTT/assets/images/mqtt-publish-subscribe.png "Logo Title Text 1")
+![MQTT Client-Server](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/mqtt-publish-subscribe.png)
