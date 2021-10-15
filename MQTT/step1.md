@@ -16,6 +16,9 @@ Der Befehl muss mit der ENTER Taste bestätigt werden!
 Anschließend kann Mosquitto über den Paket-Manager installiert werden:
 `sudo apt-get install -y mosquitto`{{execute "T1"}}
 
+Damit es besser aussieht leeren wir den Inhalt des Terminals
+`clear`{{execute "T1"}}
+
 Damit ist der Server schon installiert und kann Anfragen entgegen nehmen.
 Eine weitere Konfiguration ist in diesem Scenario nicht weiter erforderlich. Der Broker nutzt den Standardport 1883 und nimmt Anfragen ohne Authentifizierung entgegen.
 
