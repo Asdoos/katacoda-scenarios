@@ -18,6 +18,7 @@ Anschließend kann Mosquitto über den Paket-Manager installiert werden:
 Dieser Befehl muss ebenfalls mit Y bestätigt werden
 `y`{{execute "T1"}}
 
-Damit ist der Server schon installiert und kann anfragen entgegen nehmen.
+Damit ist der Server schon installiert und kann Anfragen entgegen nehmen.
+Eine weitere Konfiguration ist in diesem Scenario nicht weiter erforderlich. Der Broker nutzt den Standardport 1883 und nimmt Anfragen ohne Authentifizierung entgegen.
 
 Weiter geht es im nächsten Schritt!
