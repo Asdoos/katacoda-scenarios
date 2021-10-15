@@ -35,9 +35,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-	"terminals": [{"name": "Broker", "target": "controlplane"},
-	{"name": "Client", "target": "node01"}]
+    "uilayout": "terminal-terminal",
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
