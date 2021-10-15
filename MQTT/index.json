@@ -36,8 +36,8 @@
   },
   "environment": {
     "uilayout": "terminal-terminal",
-	"terminals": [{"name": "T1", "target": "node01"},
-	{"name": "T2", "target": "node02"}]
+	"terminals": [{"name": "Broker", "target": "controlplane"},
+	{"name": "Client", "target": "node01"}]
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
