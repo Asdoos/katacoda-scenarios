@@ -17,7 +17,7 @@ Wie funktioniert nun dieses "MQTT" überhaupt?!...
 Zu erst muss erwähnt werden, dass MQTT (ausgeschrieben: Message Queuing Telemetry Transport) auf dem Client-Server Prinzip aufbaut.
 Es gibt also ein (oder mehrere) Server der die Anfragen, der IOT Geräte, entgegennimmt, verarbeitet und wieder versendet.
 Dieser Server wird "MQTT-Broker" genannt.
-Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
+Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die Unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
 
 ![MQTT Client-Server](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/mqtt-publish-subscribe.png)
 
