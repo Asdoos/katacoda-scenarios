@@ -3,6 +3,7 @@ curl -L https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/as
 
 mkdir -p /scripts/fenster/
 curl -L https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/scripts/fenster/main.py > /scripts/fenster/main.py
+curl -L https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/scripts/fenster/requirements.txt > /scripts/fenster/requirements.txt
 
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt install -y python3.9
