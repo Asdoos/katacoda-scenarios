@@ -1,10 +1,12 @@
 # Code inspiriert von https://www.eclipse.org/paho/index.php?page=clients/python/index.php
 
 import random
-import paho.mqtt.client as publish
+import paho.mqtt.client as mqtt
 
 topic = u"Zuhause/Schlafzimmer1/FensterStatus"
 broker = ""
+
+client = mqtt.Client()
 
 
 def gen_value() -> int:
@@ -17,7 +19,8 @@ Sendet einen übergebenen Wert an den MQTT Broker
 
 
 def publish_value(value: int):
-    publish.single(topic, value, hostname=broker)
+    client.connect(broker)
+    client.publish(topic, value)
 
 
 # Press the green button in the gutter to run the script.
