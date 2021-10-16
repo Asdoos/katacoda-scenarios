@@ -1,4 +1,6 @@
 # Code inspiriert von http://www.steves-internet-guide.com/into-mqtt-python-client/
+import time
+
 import paho.mqtt.client as mqtt
 
 pub_topic = u"Zuhause/Schlafzimmer1/HeizungStatus"
@@ -25,7 +27,14 @@ def publish_value(value):
 
 
 if __name__ == '__main__':
-    client.on_message = on_message  # attach function to callback
+    client.on_message = on_message  # Funktion setzen, die verwendet werden soll
     client.connect(broker)
     client.subscribe(sub_topic)
-    client.loop_start()
+    publish_value(1)                # Heizung zu beginn an Ein(1)
+    while True:
+        print("Looping...")
+        try:
+            client.loop_start()
+        except Exception as error:
+            print(error)
+        time.sleep(5)

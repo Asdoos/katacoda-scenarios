@@ -2,7 +2,7 @@ In diesem Schritt werden wir das Skript implementieren, welches im Hintergrund j
 Verwendet wird dafür die Sprache Phyton.
 
 Ein vorgefertigtes Script liegt unter /scripts/fenster/
-`cd /scripts/fenster/`{{execute HOST2}}
+`cd /scripts/`{{execute HOST2}}
 
 Schauen wir uns dies einmal an.
 `vim fenster.py`{{execute HOST2}}
