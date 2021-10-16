@@ -1,4 +1,4 @@
-In diesem Schritt werden wir das Skript implementieren, welches im Hintergrund jede Minute einen Wert für das Fenster generiert.
+In diesem Schritt werden wir das Skript implementieren, welches im Hintergrund jede Minute einen Wert für das Fenster generiert und an den Broker sendet.
 Verwendet wird dafür die Sprache Phyton.
 
 Ein vorgefertigtes Script liegt unter /scripts/fenster/
@@ -17,7 +17,7 @@ Anschließend wird das Topic und der Broker festgelegt.
 topic = u"Zuhause/Schlafzimmer1/FensterStatus"
 broker = ""
 ```
-Jedoch muss der Boker noch ausgefüllt werden. Trage hier die IP ein.
+Jedoch muss der Broker noch ausgefüllt werden. Trage hierfür die IP ein:
 `[[HOST_IP]]`{{execute HOST2}}
 
 Um die Bibliothek zu nutzen wird ein Client erstellt. Der angegebene Parameter entscpricht dem Namen des Clients.

@@ -30,3 +30,5 @@ Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten sende
 
 http://www.steves-internet-guide.com/mosquitto-broker/
 http://www.steves-internet-guide.com/mosquitto_pub-sub-clients/
+https://www.hivemq.com/blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe/
+https://www.cloudmqtt.com/blog/the-mqtt-beginners-guide-what-is-mqtt.html
