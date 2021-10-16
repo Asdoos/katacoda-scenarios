@@ -12,7 +12,7 @@ client = mqtt.Client("HeizungSensor")
 
 
 def on_message(client, userdata, message):
-    fenster_status = message.payload.decode("utf-8") == 0
+    fenster_status = int(message.payload)
     print(type(fenster_status))
     print("message received ", str(message.payload.decode("utf-8")))
     print("message topic=", message.topic)
@@ -29,10 +29,10 @@ def on_message(client, userdata, message):
 
     if (heizung_status == 1 and fenster_status == 0) or (heizung_status == 0 and fenster_status == 1):
         return
-    if heizung_status == 1 and fenster_status == 1:
+    elif heizung_status == 1 and fenster_status == 1:
         print("Heizung wird abgeschaltet...")
         publish_value(0)
-    if heizung_status == 0 and fenster_status == 0:
+    elif heizung_status == 0 and fenster_status == 0:
         print("Heizung wird eingeschaltet...")
         publish_value(1)
 
