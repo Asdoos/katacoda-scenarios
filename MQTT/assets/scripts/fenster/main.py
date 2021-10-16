@@ -6,7 +6,7 @@ import paho.mqtt.client as mqtt
 topic = u"Zuhause/Schlafzimmer1/FensterStatus"
 broker = ""
 
-client = mqtt.Client()
+client = mqtt.Client("FensterSensor")
 
 
 def gen_value() -> int:
