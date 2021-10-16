@@ -21,12 +21,12 @@ Sendet einen übergebenen Wert an den MQTT Broker
 
 
 def publish_value(value: int):
-    client.connect(broker)
     client.publish(topic, value)
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    client.connect(broker)
     while True:
         print("Publish Value...")
         try:
