@@ -57,4 +57,4 @@ Testen wir einmal das Skript durch den Befehl:
 `python3.8 main.py`{{execute HOST2}}
 
 Wird kein Fehler angezeigt können wir das Programm im Hintergrund laufen lassen:
-`nohup python3.8 main.py`{{execute HOST2}}
+`nohup python3.8 main.py &`{{execute HOST2}}

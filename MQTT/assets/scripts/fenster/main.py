@@ -6,7 +6,7 @@ import time
 import paho.mqtt.client as mqtt
 
 topic = u"Zuhause/Schlafzimmer1/FensterStatus"
-broker = "192.168.254.1"
+broker = ""
 
 client = mqtt.Client("FensterSensor")
 
