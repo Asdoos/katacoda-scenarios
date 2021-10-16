@@ -65,7 +65,8 @@ Die Funktion publish_value ist identisch zu der aus dem Fenster Sensor
 
 In der Main-Funktion wird der erstellte Client mit der on_message Funktion konfiguriert und die Verbindung hergestellt.
 Danach kann das Topic abonniert werden und der initiale Status der Heizung gesendet werden (Eingeschaltet).
-Die Loop ruft nur die funktion client.loop_start() auf welches den Client auffordert die Nachrichten zu prüfen 
+Die Loop ruft nur die funktion client.loop_start() auf welches den Client auffordert die Nachrichten zu prüfen.
+
 
 ```
 client.on_message = on_message  # Funktion setzen, die verwendet werden soll

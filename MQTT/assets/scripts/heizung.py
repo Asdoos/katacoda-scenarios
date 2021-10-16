@@ -28,18 +28,19 @@ def on_message(client, userdata, message):
     #1 0 -> Nichts tun
     #1 1 -> Heizung aus
     fenster_status = int(message.payload)
+    global heizung_status
     if (heizung_status == 1 and fenster_status == 0) or (heizung_status == 0 and fenster_status == 1):
         return
     elif heizung_status == 1 and fenster_status == 1:
         print("Heizung wird abgeschaltet...")
         print("========================================================")
-        _heizung_status = 0
-        publish_value(_heizung_status)
+        heizung_status = 0
+        publish_value(heizung_status)
     elif heizung_status == 0 and fenster_status == 0:
         print("Heizung wird eingeschaltet...")
         print("========================================================")
-        _heizung_status = 1
-        publish_value(_heizung_status)
+        heizung_status = 1
+        publish_value(heizung_status)
 
 """
 Sendet einen übergebenen Wert an den MQTT Broker
