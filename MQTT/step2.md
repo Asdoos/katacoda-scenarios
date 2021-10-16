@@ -7,18 +7,30 @@ Die Client Pakete müssen zuvor mit folgendem Befehl installiert werden:
 Für die bessere Übersicht leeren wir wieder den Inhalt des Terminals
 `clear`{{execute HOST2}}
 
-Bevor nun der Test stattdindet muss der Begriff des "Topics" geklärt werden.
+Bevor nun der Test stattfindet muss der Begriff des "Topics" geklärt werden.
 In der Einleitung wurde erwähnt, dass einem Broker mehrere Geräte und Datenstände gesendet werden können.
 
 MQTT unterscheidet in den Daten mithilfe von Topics. Vorstellen kann man sich diese wie eine Verzeichnissstruktur.
+Möchte der Sensor dem Broker einen Wert senden, muss dieser ein zugehöriges Topic angeben unter dem der Wert gespeichert wird.
+In unserem Szenario könnte man die Topics wie folgt wählen:
 
+Für das Fenster:
+Zuhause/Schlafzimmer1/FensterStatus
 
+Für die Heizung:
+Zuhause/Schlafzimmer1/HeizungStatus
 
+Für einen Wasserkocher in der Küche kann man die 2. Stufe anpassen:
+Zuhause/Kueche/Wasserkocher
 
-Nun lassen wir uns im oberen Terminal die LOG-Dateien des MQTT Brokers anzeigen:
-`tail -f /var/log/mosquitto/mosquitto.log`{{execute HOST2}}
+Mit dem neu gewonnenen Wissen über Topics können wir nun den Test durchführen.
+
+zuerst lassen wir uns im oberen Terminal die LOG-Dateien des MQTT Brokers anzeigen. In diesen sieht man alle Anfragen von Clients zum Broker:
+`tail -f /var/log/mosquitto/mosquitto.log`{{execute HOST1}}
  
 Sind alle Vorkehrungen getroffen senden wir eine Testnachricht vom Client zum Broker.
-Dies wird mit mosquitto_pub(lish) erledigt. mit -h wird der Host angegeben. -i ist der Bezeichner des Clients.
--t ist das sogenannte Topic
-`mosquitto_pub -h [[HOST_IP]] -i Heizung -t test -m "{\"value1\":20,\"value2\":40}"`{{execute HOST2}}
+Dies wird mit mosquitto_pub(lish) erledigt. Mit dem Parameter -h wird der Host angegeben, -i ist der Bezeichner des Clients und
+-t ist das Topic
+`mosquitto_pub -h [[HOST_IP]] -i Heizung -t Zuhause/Test/Temperatur -m "20"`{{execute HOST2}}
+
+Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Client mit der Bezeichnung "Heizung".
