@@ -68,17 +68,16 @@ Danach kann das Topic abonniert werden und der initiale Status der Heizung gesen
 Die Loop ruft nur die funktion client.loop_start() auf welches den Client auffordert die Nachrichten zu prüfen 
 
 ```
-if __name__ == '__main__':
-    client.on_message = on_message  # Funktion setzen, die verwendet werden soll
-    client.connect(broker)
-    client.subscribe(sub_topic)
-    publish_value(heizung_status)                # Melde Status
-    while True:
-        print("Looping...")
-        try:
-            client.loop_start()
-        except Exception as error:
-            print(error)
-        time.sleep(5)
+client.on_message = on_message  # Funktion setzen, die verwendet werden soll
+client.connect(broker)
+client.subscribe(sub_topic)
+publish_value(heizung_status)                # Melde Status
+while True:
+    print("Looping...")
+    try:
+        client.loop_start()
+    except Exception as error:
+        print(error)
+    time.sleep(5)
 
 ```
