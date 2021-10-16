@@ -39,5 +39,5 @@ Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Cl
 
 Im Log sollten nun Zeilen geschrieben werden, dass sich ein Client namens "Heizung" verbunden und wieder getrennt hat.
 Damit ist die Verbindung erfolgreich und wir können die Terminals wieder leeren:
-`clear`{{execute HOST1}}
+`clear`{{execute HOST1 interrupt}}
 `clear`{{execute HOST2}}
