@@ -7,3 +7,5 @@ curl -L https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/as
 
 sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt install -y python3.9
+cd /scripts/fenster/
+pip install -r requirements.txt
