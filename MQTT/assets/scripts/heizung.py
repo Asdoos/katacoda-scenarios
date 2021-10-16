@@ -13,11 +13,12 @@ client = mqtt.Client("HeizungSensor")
 
 def on_message(client, userdata, message):
     fenster_status = int(message.payload)
-    print(type(fenster_status))
-    print("message received ", str(message.payload.decode("utf-8")))
-    print("message topic=", message.topic)
+    print("=================== Neue Nachricht =====================")
+    print("Wert: ", str(message.payload.decode("utf-8")))
+    print("Topic=", message.topic)
     print("message qos=", message.qos)
     print("message retain flag=", message.retain)
+    print("========================================================")
 
     #Heizung: 0 AUS, 1 AN
     #Fenster: 0 ZU, 1 AUF
