@@ -36,3 +36,8 @@ Dies wird mit mosquitto_pub(lish) erledigt. Mit dem Parameter -h wird der Host a
 `mosquitto_pub -h [[HOST_IP]] -i Heizung -t Zuhause/Test/Temperatur -m "20"`{{execute HOST2}}
 
 Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Client mit der Bezeichnung "Heizung".
+
+Im Log sollten nun Zeilen geschrieben werden, dass sich ein Client namens "Heizung" verbunden und wieder getrennt hat.
+Damit ist die Verbindung erfolgreich und wir können die Terminals wieder leeren:
+`clear`{{execute HOST1}}
+`clear`{{execute HOST2}}

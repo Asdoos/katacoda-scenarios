@@ -11,7 +11,6 @@ ACHTUNG: Auch wenn beide Scripts auf dem selben System ausgeführt werden soll d
 Der bekannteste und freie Broker nennt sich "Mosquitto". Und wird wie folgt installiert:
 Zuerst wird das Repository eingebunden:
 `sudo apt-add-repository -y ppa:mosquitto-dev/mosquitto-ppa`{{execute "T1"}}
-Der Befehl muss mit der ENTER Taste bestätigt werden!
 
 Anschließend kann Mosquitto über den Paket-Manager installiert werden:
 `sudo apt-get install -y mosquitto`{{execute "T1"}}
