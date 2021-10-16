@@ -32,9 +32,11 @@ def on_message(client, userdata, message):
         return
     elif heizung_status == 1 and fenster_status == 1:
         print("Heizung wird abgeschaltet...")
+        print("========================================================")
         publish_value(0)
     elif heizung_status == 0 and fenster_status == 0:
         print("Heizung wird eingeschaltet...")
+        print("========================================================")
         publish_value(1)
 
 """
