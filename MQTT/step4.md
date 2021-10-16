@@ -14,3 +14,5 @@ Der Client erhält dieses Publish und kann darauf reagieren.
 Diese Funktion machen wir uns in unserem Szenario zu Nutze. Unser Heizungsclient abonniert das Topic des Fensters. Wird das Topic aktualisiert bekommt die Heizung vom Broker den neuen Wert zugesendet und schaltet ab, ein oder macht einfach nichts. Ändert sich der Zustand der Heizung wird dies wiederrum dem Broker auf dem Heizungstopic mitgeteilt, falls ein anderer Client diesen abonniert hat und mit dem Wert arbeitet.
 
 ## Heizungs Client
+
+`[[HOST_IP]]`{{execute HOST2}}
