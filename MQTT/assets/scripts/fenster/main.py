@@ -1,10 +1,12 @@
 # Code inspiriert von https://www.eclipse.org/paho/index.php?page=clients/python/index.php
 
 import random
+import time
+
 import paho.mqtt.client as mqtt
 
 topic = u"Zuhause/Schlafzimmer1/FensterStatus"
-broker = ""
+broker = "192.168.254.1"
 
 client = mqtt.Client("FensterSensor")
 
@@ -25,4 +27,10 @@ def publish_value(value: int):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    publish_value(gen_value())
+    while True:
+        print("Publish Value...")
+        try:
+            publish_value(gen_value())
+        except Exception as error:
+            print(error)
+        time.sleep(60)
