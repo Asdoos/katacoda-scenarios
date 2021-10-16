@@ -1,4 +1,4 @@
-# Code inspiriert von https://www.eclipse.org/paho/index.php?page=clients/python/index.php
+# Code inspiriert von http://www.steves-internet-guide.com/into-mqtt-python-client/
 
 import random
 import time

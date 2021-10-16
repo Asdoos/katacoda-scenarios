@@ -37,7 +37,7 @@ Dies wird mit mosquitto_pub(lish) erledigt. Mit dem Parameter -h wird der Host a
 -t ist das Topic
 `mosquitto_pub -h [[HOST_IP]] -i Heizung -t Zuhause/Test/Temperatur -m "20"`{{execute HOST2}}
 
-Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Client mit der Bezeichnung "Heizung".
+Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Client mit der Bezeichnung "Heizung" und der Broker bestätigt diese Veröffentlichtung.
 ![MQTT Publish](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/mqtt-publish.png)
 
 Im Log sollten nun Zeilen geschrieben werden, dass sich ein Client namens "Heizung" verbunden und wieder getrennt hat.

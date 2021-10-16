@@ -5,7 +5,7 @@ Ein vorgefertigtes Script liegt unter /scripts/fenster/
 `cd /scripts/fenster/`{{execute HOST2}}
 
 Schauen wir uns dies einmal an.
-`vim main.py`{{execute HOST2}}
+`vim fenster.py`{{execute HOST2}}
 
 Genutzt wird die MQTT-Client Bibliothek Paho
 ```
@@ -54,7 +54,7 @@ In der Main Funktion ist ein Loop eingebaut, der alle 60 Sekunden den Wert sende
 Ist die IP eingetragen kann das Skript gespeichert und geschlossen werden.
 
 Testen wir einmal das Skript durch den Befehl:
-`python3.8 main.py`{{execute HOST2}}
+`python3.8 fenster.py`{{execute HOST2}}
 
 Wird kein Fehler angezeigt können wir das Programm im Hintergrund laufen lassen:
-`nohup python3.8 main.py &`{{execute HOST2}}
+`nohup python3.8 fenster.py &`{{execute HOST2}}
