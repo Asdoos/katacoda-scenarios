@@ -72,7 +72,7 @@ Die Loop ruft nur die funktion client.loop_start() auf welches den Client auffor
 client.on_message = on_message  # Funktion setzen, die verwendet werden soll
 client.connect(broker)
 client.subscribe(sub_topic)
-publish_value(heizung_status)                # Melde Status
+publish_value(heizung_status)
 while True:
     print("Looping...")
     try:
@@ -82,3 +82,6 @@ while True:
     time.sleep(5)
 
 ```
+
+
+dsfsdfsdfsdfsdfsdfsdf
