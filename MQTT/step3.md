@@ -58,3 +58,6 @@ Testen wir einmal das Skript durch den Befehl:
 
 Wird kein Fehler angezeigt können wir das Programm im Hintergrund laufen lassen:
 `nohup python3.8 fenster.py &`{{execute HOST2}}
+
+und clearen wieder das Terminal:
+`clear`{{execute HOST2}}

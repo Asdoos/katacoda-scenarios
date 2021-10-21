@@ -82,4 +82,7 @@ while True:
     time.sleep(5)
 
 ```
+
+Lassen wir also das Programm laufen
+`python3.8 heizung.py`{{execute HOST2}}
 Somit sind die Einrichtungsschritte erledigt.
