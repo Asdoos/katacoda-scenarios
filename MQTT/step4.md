@@ -11,7 +11,7 @@ Wird nun auf dem abonnierten Topic ein neuer Wert gepublisht sendet der Broker e
 
 Der Client erhält dieses Publish und kann darauf reagieren.
 
-Diese Funktion machen wir uns in unserem Szenario zu Nutze. Unser Heizungsclient abonniert das Topic des Fensters. Wird das Topic aktualisiert bekommt die Heizung vom Broker den neuen Wert zugesendet und schaltet ab, ein oder macht einfach nichts. Ändert sich der Zustand der Heizung wird dies wiederrum dem Broker auf dem Heizungstopic mitgeteilt, falls ein anderer Client diesen abonniert hat und mit dem Wert arbeitet.
+Diese Funktion machen wir uns in unserem Szenario zu Nutze. Unser Heizungsclient abonniert das Topic des Fensters. Wird das Topic aktualisiert bekommt die Heizung vom Broker den neuen Wert zugesendet und schaltet ab, ein oder macht einfach nichts. Ändert sich der Zustand der Heizung wird dies wiederrum dem Broker auf dem Heizungs-Topic mitgeteilt, falls ein anderer Client diesen abonniert hat und mit dem Wert arbeitet.
 
 ## Heizungsclient
 
@@ -36,7 +36,7 @@ broker = ""
 client = mqtt.Client("HeizungSensor")
 ```
 
-Im Code folgt anschließend die Funktion on_message(), welche steuert was bei einem eingehendenden Publish geschehen soll
+Im Code folgt anschließend die Funktion on_message(), welche steuert was bei einem eingehenden Publish geschehen soll
 In unserem Fall wird die erhaltene Nachricht ausgegeben. Dies dient im ersten Zweck der Information.
 ```
     print("=================== Neue Nachricht =====================")
@@ -65,7 +65,7 @@ Die Funktion publish_value ist identisch zu der aus dem Fenster Sensor
 
 In der Main-Funktion wird der erstellte Client mit der on_message Funktion konfiguriert und die Verbindung hergestellt.
 Danach kann das Topic abonniert werden und der initiale Status der Heizung gesendet werden (Eingeschaltet).
-Die Loop ruft alle 5 Sekunden die Dunktion client.loop_start() auf welches den Client auffordert die Nachrichten zu prüfen.
+Die Loop ruft alle 5 Sekunden die Funktion client.loop_start() auf welches den Client auffordert die Nachrichten zu prüfen.
 
 
 ```

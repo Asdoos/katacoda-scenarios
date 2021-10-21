@@ -15,7 +15,7 @@ Zuerst wird das Repository eingebunden:
 Anschließend kann Mosquitto über den Paket-Manager installiert werden:
 `sudo apt-get install -y mosquitto`{{execute "T1"}}
 
-Für eine bessere Überischt leeren wir den Inhalt des Terminals
+Für eine bessere Übersicht leeren wir den Inhalt des Terminals
 `clear`{{execute "T1"}}
 
 Damit ist der Server schon installiert und kann Anfragen entgegen nehmen.

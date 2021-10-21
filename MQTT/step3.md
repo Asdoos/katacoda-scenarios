@@ -1,5 +1,5 @@
 In diesem Schritt werden wir das Skript implementieren, welches im Hintergrund jede Minute einen Wert für das Fenster generiert und an den Broker sendet.
-Verwendet wird dafür die Sprache Phyton.
+Verwendet wird dafür die Sprache Python.
 
 Ein vorgefertigtes Script liegt unter /scripts/fenster/
 `cd /scripts/`{{execute HOST2}}
@@ -7,7 +7,7 @@ Ein vorgefertigtes Script liegt unter /scripts/fenster/
 Schauen wir uns dies einmal an.
 `vim fenster.py`{{execute HOST2}}
 
-Genutzt wird die MQTT-Client Bibliothek Paho
+Genutzt wird die MQTT-Client Bibliothek "Paho"
 ```
 import paho.mqtt.client as mqtt
 ``` 
@@ -20,7 +20,7 @@ broker = ""
 Jedoch muss der Broker noch ausgefüllt werden. Trage hierfür die IP ein:
 `[[HOST_IP]]`{{execute HOST2}}
 
-Um die Bibliothek zu nutzen wird ein Client erstellt. Der angegebene Parameter entscpricht dem Namen des Clients.
+Um die Bibliothek zu nutzen wird ein Client erstellt. Der angegebene Parameter entspricht dem Namen des Clients.
 ```
 client = mqtt.Client("FensterSensor")
 ```

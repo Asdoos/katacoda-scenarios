@@ -1,7 +1,7 @@
 Im oberen Terminal siehst du nun LOG-Einträge. Es soll nun darum gehen, was diese aussagen.
 
 - CONNACK: Wenn ein neuer Client sich verbindet sendet der Broker ein CONNACK(nowledge) an den Client zurück um die Verbindung zu bestätigten.
-- SUBSCRIBE: Wenn ein Client ein TOPIC abbonieren möchte, sendet er ein SUBSCRIBE an den Broker
+- SUBSCRIBE: Wenn ein Client ein TOPIC abonnieren möchte, sendet er ein SUBSCRIBE an den Broker
 - SUBACK: Das Angeforderte SUBSCRIPTION wird vom Server an den Client bestätigt
 - Recieve PUBLISH: Ein neuer Wert wurde von einem Client gesendet
 - Sending PUBLISH: Ein neuer Wert wurde an ein Client gesendet
@@ -24,5 +24,5 @@ Jede Nachricht wird mindestens einmal geliefert, der Client erwartet hier eine B
 - QoS=2
 Jede Nachricht wird genau einmal geliefert, dabei wird auf eine 2-Fache Empfangsbestätigung gesetzt
 
-Dabei muss mit jedem anstieg des Levels mit Performanceeinbußen gerechnet werden. Diese kommen von den Bestätigungen des Brokers.
+Dabei muss mit jedem anstieg des Levels mit Performance Einbußen gerechnet werden. Diese kommen von den Bestätigungen des Brokers.
 Da QoS eine Client Einstellung ist, können Clients mit unterschiedlichen QoS-Stufen senden
