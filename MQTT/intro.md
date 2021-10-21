@@ -24,11 +24,3 @@ Dieser Server wird "MQTT-Broker" genannt.
 Nun gibt es im Normalfall nicht nur einen einzigen Sensor, der seine Daten senden möchte. Wie die Unterscheidung stattfindet und wie die Heizung nun vom Broker den Status des Fenster bekommt erfahren wir in den folgenden Schritten.
 
 ![MQTT Client-Server](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/mqtt-publish-subscribe.png)
-
-
-
-
-http://www.steves-internet-guide.com/mosquitto-broker/
-http://www.steves-internet-guide.com/mosquitto_pub-sub-clients/
-https://www.hivemq.com/blog/mqtt-essentials-part-4-mqtt-publish-subscribe-unsubscribe/
-https://www.cloudmqtt.com/blog/the-mqtt-beginners-guide-what-is-mqtt.html
