@@ -1,5 +1,6 @@
 Herzlichen Glückwunsch, du hast dieses Scenario erfolgreich beendet.  
----Im Folgenden findenst du die verwendeten Quellen, welche auch weiterführende Informationen beinhalten:  
+---
+Im Folgenden findenst du die verwendeten Quellen, welche auch weiterführende Informationen beinhalten:  
 - Buckenhofer, Andreas, Lecture@DHBW: Internet der Dinge, 04 Kommunikationsprotokolle, 2021, Seite 47 ff.
 - Katacoda, Katacoda Documentation, Online: https://www.katacoda.community/
 - Steve Cope, Mosquitto MQTT Broker, 2018: http://www.steves-internet-guide.com/mosquitto-broker/
