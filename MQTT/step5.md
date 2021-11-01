@@ -11,7 +11,7 @@ Im oberen Terminal siehst du nun LOG-Einträge. Es soll nun darum gehen, was die
 Im Schaubild ist veranschaulicht wie eine typische Kommunikation aussieht
 
 ![MQTT Ablauf](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/800px-MQTT_protocol_example_without_QoS.svg.png)
-
+(vgl. [7] MQTT)
 ---
 ## Weiterführende Informationen
 
@@ -25,4 +25,5 @@ Jede Nachricht wird mindestens einmal geliefert, der Client erwartet hier eine B
 Jede Nachricht wird genau einmal geliefert, dabei wird auf eine 2-Fache Empfangsbestätigung gesetzt
 
 Dabei muss mit jedem anstieg des Levels mit Performance Einbußen gerechnet werden. Diese kommen von den Bestätigungen des Brokers.
-Da QoS eine Client Einstellung ist, können Clients mit unterschiedlichen QoS-Stufen senden
+Da QoS eine Client Einstellung ist, können Clients mit unterschiedlichen QoS-Stufen senden.
+(vgl. [5] Kommunikationsprotokolle)

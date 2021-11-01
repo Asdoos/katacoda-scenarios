@@ -86,3 +86,5 @@ while True:
 Lassen wir also das Programm laufen
 `python3.8 heizung.py`{{execute HOST2}}
 Somit sind die Einrichtungsschritte erledigt.
+
+(vgl. [4] Using The Mosquitto_pub and Mosquitto_sub MQTT Client Tools)

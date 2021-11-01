@@ -61,3 +61,5 @@ Wird kein Fehler angezeigt können wir das Programm im Hintergrund laufen lassen
 
 und clearen wieder das Terminal:
 `clear`{{execute HOST2}}
+
+(vgl. [4] Using The Mosquitto_pub and Mosquitto_sub MQTT Client Tools)

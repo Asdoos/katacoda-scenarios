@@ -9,6 +9,7 @@ Für die bessere Übersicht leeren wir wieder den Inhalt des Terminals
 
 Bevor nun der Test stattfindet muss der Begriff des "Topics" geklärt werden.
 In der Einleitung wurde erwähnt, dass einem Broker mehrere Geräte und Datenstände gesendet werden können.
+(vgl. [4] Using The Mosquitto_pub and Mosquitto_sub MQTT Client Tools)
 
 ## Topics
 MQTT unterscheidet in den Daten mithilfe von Topics. Vorstellen kann man sich diese wie eine Verzeichnissstruktur.
@@ -27,6 +28,7 @@ Zuhause/Kueche/Wasserkocher
 ![MQTT Topics](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/mqtt-topics.png)
 
 Mit dem neu gewonnenen Wissen über Topics können wir nun den Test durchführen.
+(vgl. [5] Kommunikationsprotokolle)
 
 ## Verbindungstest
 Zuerst lassen wir uns im oberen Terminal die LOG-Dateien des MQTT Brokers anzeigen. In diesen sieht man alle Anfragen von Clients zum Broker:
@@ -43,3 +45,5 @@ Gesendet wird also der Wert 20 an das Topic "Zuhause/Test/Temperatur" von dem Cl
 Im Log sollten nun Zeilen geschrieben werden, dass sich ein Client namens "Heizung" verbunden und wieder getrennt hat.
 Damit ist die Verbindung erfolgreich und wir können das Terminal leeren:
 `clear`{{execute HOST2}}
+
+(vgl. [4] Using The Mosquitto_pub and Mosquitto_sub MQTT Client Tools)

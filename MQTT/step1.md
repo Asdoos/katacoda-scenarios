@@ -20,5 +20,6 @@ Für eine bessere Übersicht leeren wir den Inhalt des Terminals
 
 Damit ist der Server schon installiert und kann Anfragen entgegen nehmen.
 Eine weitere Konfiguration ist in diesem Scenario nicht weiter erforderlich. Der Broker nutzt den Standardport 1883 und nimmt Anfragen ohne Authentifizierung entgegen.
+(vgl. [3] Mosquitto MQTT Broker)
 
 Weiter geht es im nächsten Schritt!
