@@ -31,7 +31,9 @@ Da QoS eine Client Einstellung ist, können Clients mit unterschiedlichen QoS-St
 ### Persistent Session (persistente Sitzungen)
 Folgend findest du Informationen über persistente Sessions.
 ![MQTT Persistent Session](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/persistent_session.png)
+(vgl. [5] Kommunikationsprotokolle S.38)
 
 ### Retained message
 Folgend findest du Informationen über retained messages
 ![MQTT Retained message](https://raw.githubusercontent.com/Asdoos/katacoda-scenarios/main/MQTT/assets/images/retained_message.png)
+(vgl. [5] Kommunikationsprotokolle S.40)
